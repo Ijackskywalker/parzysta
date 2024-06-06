@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="pole">
+    <p id="wynik"></p>
+    <button onclick="sprawdz()">Sprawdz</button>
+    <script>
+        function sprawdz(){
+            var liczba=document.getElementById("pole").value;
+            var wynik;
+            if (liczba % 2 === 0){wynik="parzysta"}
+            else{wynik="nie parzysta"}
+            document.getElementById("wynik").innerHTML=wynik
+        }
+
+      
+    </script>
+    
+</body>
+</html>
